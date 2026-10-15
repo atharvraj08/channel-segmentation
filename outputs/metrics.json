@@ -1,0 +1,31 @@
+{
+  "seed": 42,
+  "n_customers": 5000,
+  "chosen_k": 5,
+  "silhouette_by_k": {
+    "2": 0.2613299722534923,
+    "3": 0.2775167402608298,
+    "4": 0.2844606172785476,
+    "5": 0.3027119361535222,
+    "6": 0.27276924475267245,
+    "7": 0.27922590024442145,
+    "8": 0.2536339835750673
+  },
+  "silhouette": 0.3027119361535222,
+  "ari": 0.9412183445113265,
+  "segment_sizes": {
+    "0": 597,
+    "1": 1180,
+    "2": 890,
+    "3": 1225,
+    "4": 1108
+  },
+  "segment_names": {
+    "0": "Omnichannel VIPs",
+    "1": "Digital Deal-Seekers",
+    "2": "Convenience Grocery Shoppers",
+    "3": "Occasional Browsers",
+    "4": "In-Store Loyalists"
+  },
+  "runtime_seconds": 1.936
+}
