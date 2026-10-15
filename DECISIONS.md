@@ -25,3 +25,5 @@ Append-only. Each entry is prefixed with the agent that made it.
 - **viz_agent**: `plot_pca_segments` takes an extra optional keyword `names=None` (segment id -> name) so the legend can show segment names; the SPEC positional signature is unchanged. `make_all_charts` passes `profiles["name"]`.
 - **viz_agent**: `runtime_seconds` covers the whole run including charts (metrics.json is written last); profile heatmap colours are z-scores across segments with raw means as annotations; Okabe-Ito colour-blind-safe palette.
 - **orchestrator**: Docs Agent failed immediately with a Claude usage limit (resets 4:20am ET). Stopped there instead of retrying, to save tokens. Phases 4–5 are left for the morning.
+- **orchestrator**: Docs Agent's first real run wrote REPORT.md, then its process vanished with no .finished/.done file and no LEARNING_GUIDE.md. Relaunched it once, for LEARNING_GUIDE.md only.
+- **orchestrator**: The docs retry agent produced nothing in 27 min, so it was stopped and the orchestrator wrote LEARNING_GUIDE.md directly (allowed fallback). REPORT.md is the docs agent's work.
