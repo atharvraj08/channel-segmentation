@@ -24,3 +24,4 @@ Append-only. Each entry is prefixed with the agent that made it.
 - **model_agent**: Created temporary root run_all.py (marked TEMPORARY) implementing run_pipeline without charts so tests/test_evaluate.py can run; viz_agent replaces it.
 - **viz_agent**: `plot_pca_segments` takes an extra optional keyword `names=None` (segment id -> name) so the legend can show segment names; the SPEC positional signature is unchanged. `make_all_charts` passes `profiles["name"]`.
 - **viz_agent**: `runtime_seconds` covers the whole run including charts (metrics.json is written last); profile heatmap colours are z-scores across segments with raw means as annotations; Okabe-Ito colour-blind-safe palette.
+- **orchestrator**: Docs Agent failed immediately with a Claude usage limit (resets 4:20am ET). Stopped there instead of retrying, to save tokens. Phases 4–5 are left for the morning.
